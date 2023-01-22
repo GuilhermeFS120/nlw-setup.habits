@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Luxurious+Script&family=Orbitron&family=Poppins&family=Quicksand&family=Raleway&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #09090a;
+    color: white;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3rem;
+
+    position: fixed;
+
+    width: 100%;
+    background: #09090a;
+
+}
+
+
+button {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #8b5ff6;
+    background-color: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 125%;
+
+    cursor: pointer;
+}
+
+button .plus {
+    color: #8b5ff6;
+    font-size: 2rem;
+}
+
+#form-habits {
+    display: flex;
+    gap: 2rem;
+    padding: 15rem 3rem 3rem;
+    width: fit-content;
+}
+
+.habits {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.habit {
+    width: 4rem;
+    height: 4rem;
+
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    gap: 3rem;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.day div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 125%;
+    text-align: center;
+    color: #a1a1aa;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 4rem;
+    height: 4rem;
+
+    border: 2px solid #27272a;
+    border-radius: 0.5rem;
+
+    background: #18181b;
+
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+input:checked {
+    background: #8b5ff6;
+    border: 2px solid #C4B5FD
+}
+
+@media(max-width: 570px) {
+    button div {
+        display: none;
+    }
+}
